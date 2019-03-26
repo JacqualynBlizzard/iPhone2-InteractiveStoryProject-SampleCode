@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Adventure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6A-qh-0Xd">
+                                <rect key="frame" x="20" y="120" width="335" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bG-ty-neu">
+                                <rect key="frame" x="157.5" y="253" width="60" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="szr-mj-NlP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bXe-TG-9Kp" kind="show" id="AAU-kO-e62"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0bG-ty-neu" firstAttribute="top" secondItem="v6A-qh-0Xd" secondAttribute="bottom" constant="100" id="0nr-Ex-Z7f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v6A-qh-0Xd" secondAttribute="trailing" constant="20" id="2lw-gs-3sb"/>
+                            <constraint firstItem="v6A-qh-0Xd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="FcV-B2-J3J"/>
+                            <constraint firstItem="0bG-ty-neu" firstAttribute="centerX" secondItem="v6A-qh-0Xd" secondAttribute="centerX" id="i6Y-JD-2hp"/>
+                            <constraint firstItem="v6A-qh-0Xd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sS5-Dj-E5y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="136"/>
+        </scene>
+        <!--Character View Controller-->
+        <scene sceneID="xt2-c0-t3A">
+            <objects>
+                <viewController id="bXe-TG-9Kp" userLabel="Character View Controller" customClass="CharacterViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCJ-8k-IaV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before we take off on our adventure, select a character below! " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-CH-ktW">
+                                <rect key="frame" x="20" y="120" width="335" height="98"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyJ-te-mQD">
+                                <rect key="frame" x="20" y="290" width="150" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="dzu-cY-m7h"/>
+                                </constraints>
+                                <state key="normal" image="cat"/>
+                                <connections>
+                                    <segue destination="5ru-7r-qCH" kind="show" id="VMG-LB-9Mx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEA-lI-dxM">
+                                <rect key="frame" x="205" y="294" width="150" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Y3o-hf-ICr"/>
+                                </constraints>
+                                <state key="normal" image="dog"/>
+                                <connections>
+                                    <segue destination="Be5-bn-swH" kind="show" id="ae3-69-be2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLd-Cw-rXZ">
+                                <rect key="frame" x="55" y="465" width="79" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Dog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J63-YB-G2Q">
+                                <rect key="frame" x="241" y="465" width="79" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WLd-Cw-rXZ" firstAttribute="top" secondItem="EyJ-te-mQD" secondAttribute="bottom" constant="30" id="5Yp-0a-u52"/>
+                            <constraint firstItem="qF3-Ie-L7P" firstAttribute="trailing" secondItem="J63-YB-G2Q" secondAttribute="trailing" constant="55" id="7pD-eD-yJD"/>
+                            <constraint firstItem="qF3-Ie-L7P" firstAttribute="bottom" secondItem="WLd-Cw-rXZ" secondAttribute="bottom" constant="180" id="GmD-n8-S3E"/>
+                            <constraint firstItem="WLd-Cw-rXZ" firstAttribute="top" secondItem="EyJ-te-mQD" secondAttribute="bottom" constant="30" id="Nly-vd-y0o"/>
+                            <constraint firstItem="J63-YB-G2Q" firstAttribute="top" secondItem="OEA-lI-dxM" secondAttribute="bottom" constant="30" id="Twc-6g-Gft"/>
+                            <constraint firstItem="J63-YB-G2Q" firstAttribute="top" secondItem="OEA-lI-dxM" secondAttribute="bottom" constant="30" id="cMI-mf-fTa"/>
+                            <constraint firstAttribute="trailing" secondItem="OEA-lI-dxM" secondAttribute="trailing" constant="20" id="gwl-uO-W3v"/>
+                            <constraint firstItem="qF3-Ie-L7P" firstAttribute="trailing" secondItem="3ni-CH-ktW" secondAttribute="trailing" constant="20" id="mjb-Qd-aO7"/>
+                            <constraint firstItem="3ni-CH-ktW" firstAttribute="leading" secondItem="qF3-Ie-L7P" secondAttribute="leading" constant="20" id="ntm-go-QDI"/>
+                            <constraint firstItem="WLd-Cw-rXZ" firstAttribute="leading" secondItem="qF3-Ie-L7P" secondAttribute="leading" constant="55" id="qbJ-Gl-7zp"/>
+                            <constraint firstItem="EyJ-te-mQD" firstAttribute="leading" secondItem="KCJ-8k-IaV" secondAttribute="leading" constant="20" id="veq-8O-bhC"/>
+                            <constraint firstItem="qF3-Ie-L7P" firstAttribute="bottom" secondItem="J63-YB-G2Q" secondAttribute="bottom" constant="180" id="wNI-T7-ib5"/>
+                            <constraint firstItem="3ni-CH-ktW" firstAttribute="top" secondItem="qF3-Ie-L7P" secondAttribute="top" constant="100" id="ygS-2r-SE8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qF3-Ie-L7P"/>
+                    </view>
+                    <connections>
+                        <outlet property="instructionsLabel" destination="3ni-CH-ktW" id="gzg-UJ-AQy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fob-Lh-4uU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="137"/>
+        </scene>
+        <!--Cat Part 1 View Controller-->
+        <scene sceneID="CIM-Z0-ELb">
+            <objects>
+                <viewController id="5ru-7r-qCH" userLabel="Cat Part 1 View Controller" customClass="CatPart1ViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwn-D1-Vng">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there! My name is kitty and I'm a space cat! Where do you think I should I take off to? Mars or the Moon? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewm-T2-u5p">
+                                <rect key="frame" x="20" y="120" width="335" height="163"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5E-lv-rgW">
+                                <rect key="frame" x="255" y="535" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="J3O-KL-uob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="To Mars">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B8P-F8-l1C" kind="show" id="7m7-u8-dEf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-rk-XXk">
+                                <rect key="frame" x="255" y="596" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="RoU-UW-zd4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="To Moon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U02-CL-9Nb" kind="show" id="oiQ-ay-tNi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="JcC-1K-lVM">
+                                <rect key="frame" x="40" y="482" width="150" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="etW-Tz-HCD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ewm-T2-u5p" firstAttribute="centerX" secondItem="hwn-D1-Vng" secondAttribute="centerX" id="51N-EA-yLX"/>
+                            <constraint firstItem="Nzc-kG-eYz" firstAttribute="bottom" secondItem="JcC-1K-lVM" secondAttribute="bottom" constant="40" id="5MP-RF-4TJ"/>
+                            <constraint firstItem="VgQ-rk-XXk" firstAttribute="top" secondItem="h5E-lv-rgW" secondAttribute="bottom" constant="30" id="Ars-6d-grB"/>
+                            <constraint firstItem="Nzc-kG-eYz" firstAttribute="trailing" secondItem="VgQ-rk-XXk" secondAttribute="trailing" constant="40" id="CdZ-V5-gw3"/>
+                            <constraint firstItem="JcC-1K-lVM" firstAttribute="leading" secondItem="Nzc-kG-eYz" secondAttribute="leading" constant="40" id="Hba-f0-O9u"/>
+                            <constraint firstItem="Nzc-kG-eYz" firstAttribute="bottom" secondItem="VgQ-rk-XXk" secondAttribute="bottom" constant="40" id="T8L-yy-QRl"/>
+                            <constraint firstAttribute="trailing" secondItem="ewm-T2-u5p" secondAttribute="trailing" constant="20" id="VXo-eY-xaP"/>
+                            <constraint firstItem="ewm-T2-u5p" firstAttribute="top" secondItem="Nzc-kG-eYz" secondAttribute="top" constant="100" id="b01-nx-d2p"/>
+                            <constraint firstItem="ewm-T2-u5p" firstAttribute="leading" secondItem="hwn-D1-Vng" secondAttribute="leading" constant="20" id="g1T-Uo-h2S"/>
+                            <constraint firstItem="Nzc-kG-eYz" firstAttribute="trailing" secondItem="h5E-lv-rgW" secondAttribute="trailing" constant="40" id="xzl-Sg-knH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nzc-kG-eYz"/>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="JcC-1K-lVM" id="FVP-xQ-EVs"/>
+                        <outlet property="catStoryPart1Label" destination="ewm-T2-u5p" id="vyK-fM-Kku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqo-yl-haG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681" y="937"/>
+        </scene>
+        <!--Cat Part 2 Mars View Controller-->
+        <scene sceneID="3fr-68-8ba">
+            <objects>
+                <viewController id="B8P-F8-l1C" userLabel="Cat Part 2 Mars View Controller" customClass="CatPart2MarsViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RRI-bg-WRH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-PW-tQ1">
+                                <rect key="frame" x="255" y="596" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="o6z-Jz-znl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="V1W-vh-sDD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-lF-YCS">
+                                <rect key="frame" x="40" y="482" width="150" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="hcv-Bx-9aH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mars, the red planet. The temperature fluctuates a lot here, but maybe I'll find Matt Damon? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUY-ek-3a7">
+                                <rect key="frame" x="20" y="120" width="335" height="130.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4ea-lF-YCS" secondAttribute="bottom" constant="40" id="7Oo-v6-3px"/>
+                            <constraint firstItem="6M0-CJ-Zr3" firstAttribute="trailing" secondItem="SUY-ek-3a7" secondAttribute="trailing" constant="20" id="EtZ-wg-BhY"/>
+                            <constraint firstItem="SUY-ek-3a7" firstAttribute="top" secondItem="6M0-CJ-Zr3" secondAttribute="top" constant="100" id="Hab-2U-yxE"/>
+                            <constraint firstItem="SUY-ek-3a7" firstAttribute="leading" secondItem="6M0-CJ-Zr3" secondAttribute="leading" constant="20" id="MBB-rL-5XW"/>
+                            <constraint firstItem="6M0-CJ-Zr3" firstAttribute="trailing" secondItem="pLd-PW-tQ1" secondAttribute="trailing" constant="40" id="OcX-GM-hXo"/>
+                            <constraint firstItem="4ea-lF-YCS" firstAttribute="leading" secondItem="6M0-CJ-Zr3" secondAttribute="leading" constant="40" id="PSV-fv-8b4"/>
+                            <constraint firstItem="6M0-CJ-Zr3" firstAttribute="bottom" secondItem="pLd-PW-tQ1" secondAttribute="bottom" constant="40" id="mV7-TN-1bG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6M0-CJ-Zr3"/>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="4ea-lF-YCS" id="OzA-Op-rfK"/>
+                        <outlet property="catStoryPart2MarsLabel" destination="SUY-ek-3a7" id="1Dm-dQ-1iS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEy-4m-QA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="728"/>
+        </scene>
+        <!--Cat Part 2 Moon View Controller-->
+        <scene sceneID="hKv-2r-S0b">
+            <objects>
+                <viewController id="U02-CL-9Nb" userLabel="Cat Part 2 Moon View Controller" customClass="CatPart2MoonViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o3L-gy-dXO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbc-n5-doY">
+                                <rect key="frame" x="255" y="596" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ca4-PS-7DN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lyH-Nh-qgb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="UG4-nG-ccW">
+                                <rect key="frame" x="40" y="482" width="150" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Sts-fr-aVP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love the moon! It's made of cheese I hear, who doesn't love cheese? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2E-el-Dwb">
+                                <rect key="frame" x="20" y="120" width="335" height="98"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yxT-se-WBc" firstAttribute="bottom" secondItem="Nbc-n5-doY" secondAttribute="bottom" constant="40" id="1tK-mr-Tet"/>
+                            <constraint firstItem="q2E-el-Dwb" firstAttribute="top" secondItem="yxT-se-WBc" secondAttribute="top" constant="100" id="Bmn-9s-911"/>
+                            <constraint firstItem="yxT-se-WBc" firstAttribute="trailing" secondItem="q2E-el-Dwb" secondAttribute="trailing" constant="20" id="Jeg-TF-3DM"/>
+                            <constraint firstItem="UG4-nG-ccW" firstAttribute="leading" secondItem="yxT-se-WBc" secondAttribute="leading" constant="40" id="KHZ-aJ-iIJ"/>
+                            <constraint firstItem="q2E-el-Dwb" firstAttribute="leading" secondItem="o3L-gy-dXO" secondAttribute="leading" constant="20" id="OxN-TZ-2FR"/>
+                            <constraint firstItem="yxT-se-WBc" firstAttribute="trailing" secondItem="Nbc-n5-doY" secondAttribute="trailing" constant="40" id="Tfx-yK-ujb"/>
+                            <constraint firstItem="yxT-se-WBc" firstAttribute="bottom" secondItem="UG4-nG-ccW" secondAttribute="bottom" constant="40" id="kF4-4A-Db7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yxT-se-WBc"/>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="UG4-nG-ccW" id="IrO-dj-guI"/>
+                        <outlet property="catStoryPart2MoonLabel" destination="q2E-el-Dwb" id="EHj-M8-PtT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zof-ko-l7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="1416"/>
+        </scene>
+        <!--Dog Part 1 View Controller-->
+        <scene sceneID="pFN-7e-P5s">
+            <objects>
+                <viewController id="Be5-bn-swH" userLabel="Dog Part 1 View Controller" customClass="DogPart1ViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5G-Vb-tDi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there! My name is rover and I'm a space pup! Where do you think I should I take off to? Mars or the Moon? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB4-dC-3es">
+                                <rect key="frame" x="20" y="120" width="335" height="163"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-Vf-Q9H">
+                                <rect key="frame" x="255" y="535" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="1fB-gQ-yYY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="To Mars">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wcm-U0-x60" kind="show" id="iqh-A6-0YM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XY-GC-Ty4">
+                                <rect key="frame" x="255" y="596" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="21p-Nm-Xp5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="To Moon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rKs-KF-aLf" kind="show" id="ZZd-tC-31B"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="kY4-SQ-Stb">
+                                <rect key="frame" x="40" y="486" width="150" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="cbz-T1-XV9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hB4-dC-3es" firstAttribute="top" secondItem="Sae-9G-f7q" secondAttribute="top" constant="100" id="Dmb-la-pqW"/>
+                            <constraint firstItem="3XY-GC-Ty4" firstAttribute="top" secondItem="ZU1-Vf-Q9H" secondAttribute="bottom" constant="30" id="FSr-T4-W4A"/>
+                            <constraint firstItem="Sae-9G-f7q" firstAttribute="bottom" secondItem="kY4-SQ-Stb" secondAttribute="bottom" constant="40" id="Ibc-41-hI5"/>
+                            <constraint firstItem="hB4-dC-3es" firstAttribute="centerX" secondItem="v5G-Vb-tDi" secondAttribute="centerX" id="NYj-ZT-iLT"/>
+                            <constraint firstItem="kY4-SQ-Stb" firstAttribute="leading" secondItem="Sae-9G-f7q" secondAttribute="leading" constant="40" id="Rg5-f7-oX4"/>
+                            <constraint firstItem="Sae-9G-f7q" firstAttribute="bottom" secondItem="3XY-GC-Ty4" secondAttribute="bottom" constant="40" id="TFP-m3-j5p"/>
+                            <constraint firstItem="Sae-9G-f7q" firstAttribute="trailing" secondItem="3XY-GC-Ty4" secondAttribute="trailing" constant="40" id="c5U-vQ-khD"/>
+                            <constraint firstItem="hB4-dC-3es" firstAttribute="leading" secondItem="Sae-9G-f7q" secondAttribute="leading" constant="20" id="cT9-Bv-Sex"/>
+                            <constraint firstItem="Sae-9G-f7q" firstAttribute="trailing" secondItem="hB4-dC-3es" secondAttribute="trailing" constant="20" id="dIu-Us-29Z"/>
+                            <constraint firstItem="Sae-9G-f7q" firstAttribute="trailing" secondItem="ZU1-Vf-Q9H" secondAttribute="trailing" constant="40" id="hwO-ow-apF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sae-9G-f7q"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogImageView" destination="kY4-SQ-Stb" id="YKc-1B-geV"/>
+                        <outlet property="dogStoryPart1Label" destination="hB4-dC-3es" id="Wpf-E7-Lg9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9j2-1W-gqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="-484"/>
+        </scene>
+        <!--Dog Part 2 Moon View Controller-->
+        <scene sceneID="hi5-l4-etj">
+            <objects>
+                <viewController id="rKs-KF-aLf" userLabel="Dog Part 2 Moon View Controller" customClass="DogPart2MoonViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zGL-yB-zak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sA-zy-vJF">
+                                <rect key="frame" x="255" y="596" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Wou-Rj-zFS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ecp-Ek-ayr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="WS1-nE-9Tl">
+                                <rect key="frame" x="40" y="486" width="150" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="emf-UY-5rp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love the moon! You can get a great view of Earth from here. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlc-50-p22">
+                                <rect key="frame" x="20" y="120" width="335" height="98"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WS1-nE-9Tl" firstAttribute="leading" secondItem="z6P-Dr-fE1" secondAttribute="leading" constant="40" id="3zj-7p-YLE"/>
+                            <constraint firstItem="wlc-50-p22" firstAttribute="top" secondItem="z6P-Dr-fE1" secondAttribute="top" constant="100" id="7rR-vG-sFf"/>
+                            <constraint firstItem="z6P-Dr-fE1" firstAttribute="trailing" secondItem="5sA-zy-vJF" secondAttribute="trailing" constant="40" id="8PX-OV-pcb"/>
+                            <constraint firstItem="z6P-Dr-fE1" firstAttribute="bottom" secondItem="WS1-nE-9Tl" secondAttribute="bottom" constant="40" id="ESM-5n-P6A"/>
+                            <constraint firstItem="z6P-Dr-fE1" firstAttribute="trailing" secondItem="wlc-50-p22" secondAttribute="trailing" constant="20" id="GVc-pn-RII"/>
+                            <constraint firstItem="wlc-50-p22" firstAttribute="top" secondItem="z6P-Dr-fE1" secondAttribute="top" constant="100" id="RKj-xV-FoD"/>
+                            <constraint firstItem="z6P-Dr-fE1" firstAttribute="bottom" secondItem="5sA-zy-vJF" secondAttribute="bottom" constant="40" id="Xmz-R4-1O1"/>
+                            <constraint firstItem="z6P-Dr-fE1" firstAttribute="trailing" secondItem="wlc-50-p22" secondAttribute="trailing" constant="20" id="lLX-ix-f4K"/>
+                            <constraint firstItem="wlc-50-p22" firstAttribute="leading" secondItem="z6P-Dr-fE1" secondAttribute="leading" constant="20" id="vI8-pe-TZQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z6P-Dr-fE1"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogImageView" destination="WS1-nE-9Tl" id="L5z-hS-vy6"/>
+                        <outlet property="dogStoryPart2MoonLabel" destination="wlc-50-p22" id="gg0-Cp-JuK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30x-7V-xJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="-37"/>
+        </scene>
+        <!--Dog Part 2 MarsView Controller-->
+        <scene sceneID="vin-yf-47B">
+            <objects>
+                <viewController id="wcm-U0-x60" userLabel="Dog Part 2 MarsView Controller" customClass="DogPart2MarsViewController" customModule="Interactive_Space_Story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CIu-fF-Eaq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njZ-cg-ylq">
+                                <rect key="frame" x="255" y="596" width="80" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6B1-7G-1gX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="q3w-JI-Eo4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-BH-BnR">
+                                <rect key="frame" x="40" y="486" width="150" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="PFR-cI-ovd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are about to reach Mars! Do you think we can find the Mars Rover? Maybe we could be friends? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3l-lk-6fh">
+                                <rect key="frame" x="20" y="120" width="335" height="163"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d3l-lk-6fh" firstAttribute="top" secondItem="cCT-pL-M4j" secondAttribute="top" constant="100" id="4Qe-FA-ahH"/>
+                            <constraint firstItem="cCT-pL-M4j" firstAttribute="bottom" secondItem="njZ-cg-ylq" secondAttribute="bottom" constant="40" id="7sK-IB-Y2v"/>
+                            <constraint firstItem="d3l-lk-6fh" firstAttribute="leading" secondItem="cCT-pL-M4j" secondAttribute="leading" constant="20" id="AcZ-4L-CAL"/>
+                            <constraint firstItem="DVE-BH-BnR" firstAttribute="leading" secondItem="cCT-pL-M4j" secondAttribute="leading" constant="40" id="UwV-a4-zIP"/>
+                            <constraint firstItem="cCT-pL-M4j" firstAttribute="trailing" secondItem="d3l-lk-6fh" secondAttribute="trailing" constant="20" id="f3O-Dz-hMP"/>
+                            <constraint firstItem="cCT-pL-M4j" firstAttribute="bottom" secondItem="DVE-BH-BnR" secondAttribute="bottom" constant="40" id="sOj-QP-qG0"/>
+                            <constraint firstItem="cCT-pL-M4j" firstAttribute="trailing" secondItem="njZ-cg-ylq" secondAttribute="trailing" constant="40" id="uX1-Dk-388"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cCT-pL-M4j"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogImageView" destination="DVE-BH-BnR" id="U7j-cn-6ge"/>
+                        <outlet property="dogStoryPart2MarsLabel" destination="d3l-lk-6fh" id="RAa-ec-nYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itG-d1-9cO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="-732"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="131" height="145"/>
+        <image name="dog" width="119" height="141"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="V1W-vh-sDD"/>
+    </inferredMetricsTieBreakers>
+</document>
